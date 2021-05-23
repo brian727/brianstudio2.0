@@ -8,6 +8,9 @@
 
 trigger:
 - main
+- task: DownloadGithubNpmPackage@1
+  inputs:
+    packageName: 'npm'
 
 pool:
   vmImage: ubuntu-latest
